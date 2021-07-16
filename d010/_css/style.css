@@ -12,7 +12,7 @@
     --cor0: #80cfe1;
     --cor1: #3bbddb;
     --cor2: #2d92a8;
-    --cor3: #34555c;
+    --cor3: #11404b;
     --cor4: #19505c;
 
     --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
@@ -20,10 +20,64 @@
     --fonte-android: 'Android', 'cursive'; 
 }
 
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
 body{
     background-color: var(--cor0);
+    font-family: var(--fonte-padrao);
+}
+
+header{
+    background-color: var(--cor2);
+    padding: 10px;
 }
 
 header > h1{
+    font-family: var(--fonte-destaque);
+    text-align: center;
+}
+
+header > p{
+    font-weight: normal;
+    text-align: center;
+}
+
+nav{
+    background-color: var(--cor3);
+}
+
+nav > a{
+    text-decoration: none;
+    font-family: var(--fonte-destaque);
+    font-size: 20px;
+    color: white;
+    margin: 5px 20px;
+}
+
+nav > a:hover{
+
+    background-color: var(--cor1);
+    color: black;
+}
+
+main{
+    background-color: #d5f5fc;
+}
+
+main h1{
+    color: var(--cor4);
     font-family: var(--fonte-android);
+}
+
+main h2{
+    color: var(--cor1);
+    font-family: var(--fonte-android);
+}
+
+footer{
+    background-color: var(--cor3);
+    color: white;
 }
