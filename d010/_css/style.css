@@ -10,7 +10,7 @@
 
 :root{
     --cor0: #80cfe1;
-    --cor1: #3bbddb;
+    --cor1: #03caf7;
     --cor2: #2d92a8;
     --cor3: #11404b;
     --cor4: #19505c;
@@ -55,7 +55,7 @@ header > p{
 nav{
     background-color: var(--cor3);
     padding: 10px;
-    
+    box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.384);
 }
 
 nav > a{
@@ -96,7 +96,6 @@ main h1{
     color: var(--cor3);
     font-family: var(--fonte-android);
     font-size: 30px;
-    width: 100%;
     padding-top: 20px;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.205);
     margin-left: 20px;   
@@ -131,7 +130,9 @@ main a:hover{
 }
 
 main img{
-    width: 100%;
+    width: 95%;
+    display: block;
+    margin: auto;
 }
 
 main img.pequena{
@@ -142,18 +143,31 @@ main img.pequena{
 
 main div{
     background-color: var(--cor3);
+
 }
 
 #video{ 
     min-width: 300px;
-    max-width: 600px;
+    max-width: 700px;
     margin: auto;
+    padding: 20px;
 }
 
 aside{
     background-color: var(--cor0);
     margin: 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+aside > h3{
+    background-color: var(--cor1);
+    font-family: var(--fonte-padrao);
+    color:var(--cor3);
     padding: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.329);
 }
 
 footer{
